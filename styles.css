@@ -1,0 +1,211 @@
+/*selector {
+    property: value;
+    property1: value;
+}*/
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+footer {
+    background-color: coral;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    }
+#button{
+    display:none;
+}
+/*.mobile {
+    display:inline;
+}
+*/
+li{
+    margin: 0.5em;
+}
+li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+#top {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#top h1{
+    width:40vw;
+}
+.up{margin-bottom:1em;}
+.splash{
+    font-size: 5vh;
+    text-shadow:2px 2px 4px white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/insider-sportshop.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+.splash button{
+   font-size:3vh;
+   border:0 solid grey;
+   background-color: grey;
+   border-radius: 5px;
+}
+#loc{
+    margin:0 8px 0;
+}
+iframe{
+    width:95vw;
+    height: 50vh;
+}
+
+.team{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    margin:10px 8px 0;
+}
+.team img{
+    width: 100%;
+    height:100%;
+}
+.goods{
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    padding-bottom: 5vmax;
+    margin:10px 8px 0;
+}
+.goods img{
+    width: 100%;
+    height:70%;
+}
+.goods h2 {
+    text-align: center;
+    margin: 0px;
+    height: 10%;
+}
+.goods p {
+    text-align: left;
+    margin-bottom:0px;
+    padding-top:3px;
+    height: 20%;
+}
+.goods div{
+    
+    border: 2px solid green;
+    padding-bottom: 1em;
+}
+.goods div:hover{
+    border-color:yellow;
+}
+.galery1{
+    margin : 0px 8px 0px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    margin-bottom:5px;
+}
+.galery1 img{
+    width: 100%;
+    height:100%;
+
+}
+.galery2{
+    margin : 0px 8px 0px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+    padding-top: 5px;
+    margin-bottom: 1vmax;
+}
+.galery2 img{
+    width: 100%;
+    height:100%;
+
+}
+
+
+
+
+@media all and (max-width: 600px){
+    #button{
+    display: block;
+}
+#button p{
+    background-color: rgb(169, 153, 207);
+    display: none;
+}
+
+#button a{
+    color: black;
+    text-decoration: none;
+}
+    #button:hover h1{
+        text-decoration: underline;
+        padding:0;
+        margin:0;
+        background-color:rgb(169, 153, 207) ;
+    }
+
+    #button:hover p {
+    text-align: center;    
+    margin:0;
+    display: block;
+    text-decoration: none;
+    background-color: rgb(169, 153, 207);
+    z-index: 0;
+    }
+    #button:hover {
+        position: absolute; 
+        right:0 ; 
+        top:1px;
+    }
+   .desktop {
+     display: none;
+}
+   .team{
+    grid-template-columns: 1fr 1fr ;
+    gap:5px;
+    margin:5px 8px 0;
+}
+   .goods{
+    grid-template-columns: 1fr 1fr;
+    gap:5px;
+    padding-bottom: 5vmax;
+    margin:5px 0 0;
+}
+   .goods img{
+    width: 100%;
+    height:50%;
+}
+   .goods div{
+    border: none;
+    padding-bottom: 1em;
+}
+   .galery1{
+    margin: 0;
+    grid-template-columns: 1fr ;
+    gap:5px;
+    margin-bottom:2px;
+}
+   .galery2{
+    margin : 0;
+    grid-template-columns: 1fr ;
+    gap:5px;
+    padding-top: 3px;
+    margin-bottom: 1vmax;
+}
+}
